@@ -68,5 +68,21 @@ namespace CalculatorLibrary.Test
             //Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void TestRemainder()
+        {
+            //Arrange 
+            int num1 = 10;
+            int num2 = 3;
+            int expected = 1;
+
+            //Act
+            Operations op = new Operations();
+            int actual = op.Remainder(num1, num2);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
